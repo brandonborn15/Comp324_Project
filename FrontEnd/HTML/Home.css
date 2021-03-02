@@ -1,0 +1,116 @@
+.u-section-1-1 {
+  background-image: none;
+}
+
+.u-section-1-1 .u-sheet-1 {
+  min-height: 974px;
+}
+
+.u-section-1-1 .u-shape-1 {
+  height: 15px;
+  background-image: none;
+  margin: 0 0 0 auto;
+}
+
+.u-section-1-1 .u-image-1 {
+  width: 426px;
+  height: 668px;
+  box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.4);
+  margin: 30px auto 0 16px;
+}
+
+.u-section-1-1 .u-text-1 {
+  font-size: 6rem;
+  font-weight: 700;
+  width: 726px;
+  margin: -668px auto 0;
+}
+
+.u-section-1-1 .u-image-2 {
+  width: 488px;
+  height: 488px;
+  box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.4);
+  margin: -14px 14px 0 auto;
+}
+
+.u-section-1-1 .u-btn-1 {
+  background-image: linear-gradient(to right, #2cccc4, #8b2ed2);
+  border-style: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  box-shadow: 0 -2px 40px 0 rgba(128,128,128,1);
+  animation-duration: 1000ms;
+  margin: 54px auto 0;
+  padding: 57px 125px 58px 123px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1-1 .u-shape-1 {
+    margin-right: initial;
+    margin-left: initial;
+  }
+
+  .u-section-1-1 .u-image-1 {
+    margin-top: 120px;
+  }
+
+  .u-section-1-1 .u-text-1 {
+    margin-top: -507px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1-1 .u-text-1 {
+    width: 720px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1-1 .u-image-1 {
+    margin-top: 225px;
+  }
+
+  .u-section-1-1 .u-text-1 {
+    width: 540px;
+    margin-top: -612px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1-1 .u-sheet-1 {
+    min-height: 691px;
+  }
+
+  .u-section-1-1 .u-image-1 {
+    width: 340px;
+    height: 533px;
+    margin-top: 172px;
+    margin-left: 0;
+  }
+
+  .u-section-1-1 .u-text-1 {
+    font-size: 3.75rem;
+    width: 340px;
+    margin-top: -559px;
+  }
+
+  .u-section-1-1 .u-image-2 {
+    width: 340px;
+    height: 340px;
+    margin-right: 0;
+  }
+}.u-block-d102-2 {
+  position: absolute;
+  bottom: 10px;
+}
+
+.u-block-d102-3 {
+  position: absolute;
+  left: 0;
+}
+
+.u-block-d102-4 {
+  position: absolute;
+  right: 0;
+}
