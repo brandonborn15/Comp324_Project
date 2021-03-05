@@ -1,0 +1,129 @@
+.u-section-1 {
+  background-image: none;
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 655px;
+}
+
+.u-section-1 .u-shape-1 {
+  height: 15px;
+  background-image: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.u-section-1 .u-image-1 {
+  width: 514px;
+  height: 514px;
+  box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.4);
+  margin: 50px auto 0 30px;
+}
+
+.u-section-1 .u-group-1 {
+  width: 468px;
+  min-height: 560px;
+  box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.4);
+  height: auto;
+  margin: -514px 50px 30px auto;
+}
+
+.u-section-1 .u-container-layout-1 {
+  padding: 30px 30px 18px;
+}
+
+.u-section-1 .u-text-1 {
+  margin: 0;
+}
+
+.u-section-1 .u-text-2 {
+  margin: 40px 0 0;
+}
+
+.u-section-1 .u-text-3 {
+  margin: 50px 127px 0 169px;
+}
+
+.u-section-1 .u-text-4 {
+  margin: -33px 250px 0 0;
+}
+
+.u-section-1 .u-btn-1 {
+  border-style: none;
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  margin: 35px auto 0 0;
+  padding: 0;
+}
+
+.u-section-1 .u-btn-2 {
+  border-style: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 30px auto 0 0;
+  padding: 0;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-image-1 {
+    width: 570px;
+    height: 570px;
+    margin-top: 43px;
+    margin-left: 23px;
+  }
+
+  .u-section-1 .u-group-1 {
+    min-height: 551px;
+  }
+
+  .u-section-1 .u-text-4 {
+    margin-top: 26px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-image-1 {
+    width: 540px;
+    height: 540px;
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-container-layout-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 481px;
+  }
+
+  .u-section-1 .u-image-1 {
+    width: 340px;
+    height: 340px;
+  }
+
+  .u-section-1 .u-group-1 {
+    width: 340px;
+    margin-top: -340px;
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-text-3 {
+    margin-right: 63px;
+    margin-left: 105px;
+  }
+
+  .u-section-1 .u-text-4 {
+    margin-right: 122px;
+  }
+
+}
+.footer-color{
+  background-color: #e38e4ecb;
+}
+.Contact{
+  text-align: center;
+}
