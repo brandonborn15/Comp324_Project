@@ -1,5 +1,6 @@
 var app_firebase = {};
-var app_firstore = {};
+var app_firestore = {};
+var app_storage = {};
 (function () {
     var config = {
         apiKey: "AIzaSyB63jO73rBCPEs-WwB7ZT3NZ1kMSnbzuJY",
@@ -14,4 +15,5 @@ var app_firstore = {};
     firebase.initializeApp(config);
     app_firebase = firebase;
     app_firestore = firebase.firestore;
+    app_storage = firebase.storage();
 })()

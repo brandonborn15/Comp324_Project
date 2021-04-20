@@ -3,10 +3,14 @@ var setInfo = {};
 var signIn = {};
 var setUser = {};
 var getInfo = {};
+var createItem = {};
 (function(){
     var firebase = app_firebase;
     var firestore = app_firestore;
+    var storageRef = firebase.storage().ref();
     var thisuser = "";
+    var uid;
+    var userStorageRef;
     function SignUserIn() {
         console.log("signing in");
         var ui = new firebaseui.auth.AuthUI(firebase.auth(),);
@@ -48,6 +52,7 @@ var getInfo = {};
     }
     function SetUser(user){
         thisuser = user;
+        userStorageRef = storageRef.child(String(user.uid));
         return thisuser;
     }
     function logOut(){
@@ -131,6 +136,61 @@ var getInfo = {};
             }
         });
     }
+    function CreateItem(){
+        console.log("creating item");
+        const colPath = "";
+
+        firebase.auth().onAuthStateChanged(user => {
+            console.log(SetUser(user));
+            if(thisuser != null){
+                uid = thisuser.uid;
+            }else{
+                window.location.replace("SignIn.html")
+            }
+        });
+
+        const itemTitleTextField = document.querySelector("#itemtitle");
+        const itemDescriptionTextField = document.querySelector("#itemdescription");
+        const itemPriceNumberField = document.querySelector("#itemprice");
+        const imageUploadField = document.getElementById("imageupload");
+        console.log(imageUploadField);
+        const saveItemButtonField = document.querySelector("#saveItemButton");
+
+        function setCategory(){
+            var ele = document.getElementsByName('category');
+            for(i = 0; i < ele.length; i++) {
+                if(ele[i].checked)
+                    return ele[i].value;
+            }
+        }
+        function UploadImage(imageRefToUpload){
+            var imageToUpload = imageUploadField.files[0];
+            console.log("image uploaded")
+            userFileStorageRef = userStorageRef.child(imageRefToUpload);
+            userFileStorageRef.put(imageToUpload)
+            console.log(imageToUpload);
+        }
+        saveItemButtonField.addEventListener("click", function () {
+            const titleToSave = itemTitleTextField.value;
+            const descToSave =itemDescriptionTextField.value;
+            const priceToSave = itemPriceNumberField.value;
+            const catToSave = setCategory();
+            const imageRefToUpload = String(imageUploadField.value).slice(12);
+            const docPath = "/users/"+ String(uid) + "/items";
+
+            firebase.firestore().collection(docPath).add({
+                title: titleToSave,
+                description: descToSave,
+                price: priceToSave,
+                category: catToSave,
+                imageref: imageRefToUpload,
+                soldflag: false
+            });
+            UploadImage(imageRefToUpload);
+            console.log("item created successfully")
+        });
+    }
+    createItem.CreateItem = CreateItem;
     mainApp.logOut = logOut;
     setInfo.SetInfo = SetInfo;
     signIn.SignUserIn = SignUserIn;

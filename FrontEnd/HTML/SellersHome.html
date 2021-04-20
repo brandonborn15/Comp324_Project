@@ -3,6 +3,8 @@
     <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-storage.js"></script>
+
 
     <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -59,29 +61,52 @@
       </div></header>
     <div class="u-active u-align-center u-carousel-item u-clearfix u-custom-color-1 u-section-1-1" src=>
       <h1 id="createUserInfo">Edit Your User Information</h1>
-      <div>
-          <span id = "userfnameout"></span>
-          <input type = "textfield" id="userfname" placeholder="First Name" />
-      </div>
-      <div>
-          <span id = "userlnameout"></span>
-          <input type = "textfield" id="userlname" placeholder="Last Name"/>
-      </div>
-      <div>
-          <span id = "userphonenumout"></span>
-          <input type = "textfield" id="userphonenum" placeholder="Contact Phone Number"/>
-      </div>
-      <div>
-          <span id = "useraddressout"></span>
-          <input type = "textfield" id="useraddress" placeholder="Local Address"/>
-      </div>
-      <button id = "saveButton">Save User Info Edits</button>
+    </div>
+  <div class="u-active u-align-center u-carousel-item u-clearfix u-custom-color-1 u-section-1-1" src=>
+      <form>
+          <label id = "userfnameout"></label>
+          <input type = "textfield" id="userfname" placeholder="First Name" /><br>
+          <label id = "userlnameout"></label>
+          <input type = "textfield" id="userlname" placeholder="Last Name"/><br>
+          <label id = "userphonenumout"></label>
+          <input type = "textfield" id="userphonenum" placeholder="Contact Phone Number"/><br>
+          <label id = "useraddressout"></label>
+          <input type = "textfield" id="useraddress" placeholder="Local Address"/><br>
+          <button id = "saveButton">Save User Info Edits</button>
+      </form>
+
       <script src="JS/main.js"></script>
       <script>getInfo.GetInfo()</script>
       <script>setInfo.SetInfo()</script>
     </div>
   <div class="u-active u-align-center u-carousel-item u-clearfix u-custom-color-1 u-section-1-1" src=>
       <h1 id="createNewPost">Create A New Post</h1>
+      <form>
+          <label id = "itemtitleout"></label>
+          <input type = "textfield" id="itemtitle" placeholder="Title" /><br>
+          <label id = "itemdescriptionout"></label>
+          <input type = "textfield" id="itemdescription" placeholder="Description"/><br>
+          <label id = "itempriceout"></label>
+          <input type = "number" id="itemprice" placeholder="Price" min = "0.00" step="any"/><br>
+          <label id = "itemcategoryout"></label>
+          <form id = "itemcategory">
+            <input type="radio" id="frames" name="category" value="frame">
+            <label for="frames">Frame</label>
+            <input type="radio" id="paintings" name="category" value="painting">
+            <label for="paintings">Painting</label>
+            <input type="radio" id="sculptures" name="category" value="sculpture">
+            <label for="sculptures">Sculpture</label>
+            <input type="radio" id="drawings" name="category" value="drawing">
+            <label for="drawings">Drawing</label>
+            <input type="radio" id="prints" name="category" value="print">
+            <label for="prints">Print</label><br>
+          </form>
+          <label for="imageupload">Select Image For Item:</label>
+          <input type="file" id="imageupload" name="image" accept = "image/*"><br>
+          <button id = "saveItemButton">Save New Item For Sale</button>
+      </form>
+      <script src="JS/main.js"></script>
+      <script>createItem.CreateItem()</script>
   </div>
       <!---------------------------------------Footer------------------------------------>
       <footer class="u-align-left u-clearfix u-footer u-footer footer-color" id="sec-9b18">
