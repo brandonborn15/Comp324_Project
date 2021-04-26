@@ -1,19 +1,35 @@
 <!DOCTYPE html>
 <html style="font-size: 16px;">
     <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+<<<<<<< HEAD
 
+=======
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-storage.js"></script>
+
+
+>>>>>>> projectwithuserinfoformandfirebaseconnect
     <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="keywords" content="Multi Frame Bronze Collection, Contact Us!">
     <meta name="description" content="">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
+<<<<<<< HEAD
     <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+=======
+>>>>>>> projectwithuserinfoformandfirebaseconnect
     <title>Frames</title>
     <link rel="stylesheet" href="CSS/nicepage.css" media="screen">
     <link rel="stylesheet" href="CSS/Frames.css" media="screen">
     <script class="u-script" type="text/javascript" src="JS/jquery-1.9.1.min.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="JS/nicepage.js" defer=""></script>
+<<<<<<< HEAD
+=======
+    <script src="JS/fireBase.js"></script>
+    <script src="JS/main.js"></script>
+>>>>>>> projectwithuserinfoformandfirebaseconnect
     <meta name="generator" content="Nicepage 3.7.2, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
 
@@ -45,15 +61,23 @@
         <div class="u-shape u-shape-svg u-text-black u-shape-1">
           <svg class="u-svg-link" preserveAspectRatio="none" viewBox="0 0 160 140" style=""><use xlink:href="#svg-ef03"></use></svg>
           <svg class="u-svg-content" id="svg-ef03"><path d="M132,103.9c-2.3-1.1-5.1-1.6-7.6-1.6H50.7L48,86.6h92.8L160,23.4H37.2L33,0H0v11.3h23.3l16.1,93
+<<<<<<< HEAD
 	c-9.4,4.7-13.2,15.9-8.7,25.2s16.1,13.1,25.5,8.6c9-4.5,13-15.2,9-24.5h41.9c-4.2,9.5,0.2,20.6,9.8,24.7c9.6,4.1,20.8-0.2,24.9-9.7
 	C146.1,119.2,141.6,108.1,132,103.9z"></path></svg>
         </div>
         <a href="SignIn.html" class="u-border-2 u-border-black u-border-hover-palette-5-base u-btn u-btn-round u-button-style u-hover-palette-4-base u-none u-radius-50 u-text-body-color u-btn-6">Sign In</a>
+=======
+	    c-9.4,4.7-13.2,15.9-8.7,25.2s16.1,13.1,25.5,8.6c9-4.5,13-15.2,9-24.5h41.9c-4.2,9.5,0.2,20.6,9.8,24.7c9.6,4.1,20.8-0.2,24.9-9.7
+	    C146.1,119.2,141.6,108.1,132,103.9z"></path></svg>
+        </div>
+        <a href="SignIn.html" onClick = "mainApp.logOut()" class="u-border-2 u-border-black u-border-hover-palette-5-base u-btn u-btn-round u-button-style u-hover-palette-4-base u-none u-radius-50 u-text-body-color u-btn-6">Sign Out</a>
+>>>>>>> projectwithuserinfoformandfirebaseconnect
         <div class="u-expanded-width u-palette-4-base u-radius-10 u-shape u-shape-round u-shape-2"></div>
         <a href="Home.html" class="u-image u-logo u-image-1">
           <img src="images/StudioLogo.png" class="u-logo-image u-logo-image-1" data-image-width="323">
         </a>
       </div></header>
+<<<<<<< HEAD
       
           <!------------------------------------Footer----------------------------------->
     <footer class="u-align-left u-clearfix u-custom-color-1 u-footer u-footer" id="sec-9b18"><div class="u-clearfix u-sheet u-sheet-1">
@@ -75,3 +99,67 @@
 
     </body>
 </html>
+=======
+    <div class="u-active u-align-center u-carousel-item u-clearfix u-custom-color-1 u-section-1-1" src=>
+      <h1 id="createUserInfo">Edit Your User Information</h1>
+    </div>
+  <div class="u-active u-align-center u-carousel-item u-clearfix u-custom-color-1 u-section-1-1" src=>
+      <form>
+          <label id = "userfnameout"></label>
+          <input type = "textfield" id="userfname" placeholder="First Name" /><br>
+          <label id = "userlnameout"></label>
+          <input type = "textfield" id="userlname" placeholder="Last Name"/><br>
+          <label id = "userphonenumout"></label>
+          <input type = "textfield" id="userphonenum" placeholder="Contact Phone Number"/><br>
+          <label id = "useraddressout"></label>
+          <input type = "textfield" id="useraddress" placeholder="Local Address"/><br>
+          <button id = "saveButton">Save User Info Edits</button>
+      </form>
+
+      <script src="JS/main.js"></script>
+      <script>getInfo.GetInfo()</script>
+      <script>setInfo.SetInfo()</script>
+    </div>
+  <div class="u-active u-align-center u-carousel-item u-clearfix u-custom-color-1 u-section-1-1" src=>
+      <h1 id="createNewPost">Create A New Post</h1>
+      <form>
+          <label id = "itemtitleout"></label>
+          <input type = "textfield" id="itemtitle" placeholder="Title" /><br>
+          <label id = "itemdescriptionout"></label>
+          <input type = "textfield" id="itemdescription" placeholder="Description"/><br>
+          <label id = "itempriceout"></label>
+          <input type = "number" id="itemprice" placeholder="Price" min = "0.00" step="any"/><br>
+          <label id = "itemcategoryout"></label>
+          <form id = "itemcategory">
+            <input type="radio" id="frames" name="category" value="frame">
+            <label for="frames">Frame</label>
+            <input type="radio" id="paintings" name="category" value="painting">
+            <label for="paintings">Painting</label>
+            <input type="radio" id="sculptures" name="category" value="sculpture">
+            <label for="sculptures">Sculpture</label>
+            <input type="radio" id="drawings" name="category" value="drawing">
+            <label for="drawings">Drawing</label>
+            <input type="radio" id="prints" name="category" value="print">
+            <label for="prints">Print</label><br>
+          </form>
+          <label for="imageupload">Select Image For Item:</label>
+          <input type="file" id="imageupload" name="image" accept = "image/*"><br>
+          <button id = "saveItemButton">Save New Item For Sale</button>
+      </form>
+      <script src="JS/main.js"></script>
+      <script>createItem.CreateItem()</script>
+  </div>
+      <!---------------------------------------Footer------------------------------------>
+      <footer class="u-align-left u-clearfix u-footer u-footer footer-color" id="sec-9b18">
+        <!--------------this is the green bar code--------------->
+        <div class="u-palette-4-base u-radius-10 u-shape u-shape-round u-shape-1"></div>
+        <H1 class="Contact">Contact Us!</H1>
+        <h4>&ensp;&ensp;&ensp; &ensp; &ensp;&ensp; &ensp;&ensp; &ensp;&ensp; &ensp; &ensp;&ensp;&ensp; &ensp;&ensp; &ensp;&ensp; &ensp;&ensp; &ensp;&ensp; &ensp;&ensp; &ensp; &ensp;&ensp;&ensp; &ensp;&ensp; &ensp;&ensp; &ensp;&ensp; &ensp; &ensp;Hours &ensp; &ensp; &ensp; &ensp; &ensp;&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; Phone Numbers &ensp; &ensp; &ensp; &ensp; &ensp;&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;&ensp; &ensp; &ensp; Address</h4>
+        <p>
+          &ensp;&ensp; &ensp;&ensp; &ensp;&ensp; &ensp;&ensp;&ensp; &ensp;&ensp; &ensp;&ensp; &ensp; &ensp;&ensp; &ensp;&ensp; &ensp;&ensp; &ensp;&ensp; &ensp;&ensp; &ensp; &ensp;&ensp;&ensp;&ensp;&ensp; &ensp;&ensp; &ensp;&ensp; &ensp;&ensp; &ensp;&ensp; &ensp; &ensp; &ensp; &ensp;&ensp; &ensp;&ensp;&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;Monday - Sunday &ensp; &ensp; &ensp; &ensp;  &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; 1(800) 235-9988 &ensp;  &ensp; &ensp; &ensp; &ensp;  &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;42 South, State Street. 
+  
+            <br>&ensp; &ensp;&ensp; &ensp;&ensp; &ensp;&ensp;&ensp; &ensp;&ensp; &ensp;&ensp; &ensp;&ensp; &ensp;&ensp; &ensp;&ensp; &ensp;&ensp; &ensp;&ensp; &ensp; &ensp;&ensp; &ensp;&ensp;&ensp; &ensp;&ensp; &ensp;&ensp; &ensp;&ensp; &ensp;&ensp; &ensp; &ensp;&ensp;&ensp;&ensp;&ensp; &ensp; &ensp; &ensp; &ensp;&ensp; &ensp;&ensp; &ensp;&ensp;&ensp; &ensp;10AM-6PM  &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; 1(312) 920-0300&ensp; &ensp;  &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;Chicago, IL 60603
+        </p>
+    </footer>
+</html>
+>>>>>>> projectwithuserinfoformandfirebaseconnect
